@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Konoba Punta Duba — Vir | Svjetlost mora i domaća kuhinja</title>
+<meta name="description" content="Konoba Punta Duba na otoku Viru — svježa riba, peka i domaće, uz more i zalazak sunca. Svijetla, opuštena dalmatinska konoba. Rezervirajte stol." />
+<link rel="canonical" href="https://artme-nx.github.io/konoba-punta-duba-vir-v2/" />
+<meta property="og:type" content="restaurant" />
+<meta property="og:locale" content="hr_HR" />
+<meta property="og:site_name" content="Konoba Punta Duba · Vir" />
+<meta property="og:title" content="Konoba Punta Duba — Vir" />
+<meta property="og:description" content="Svjetlost mora, peka i domaća kuhinja na otoku Viru." />
+<meta property="og:url" content="https://artme-nx.github.io/konoba-punta-duba-vir-v2/" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Konoba Punta Duba","servesCuisine":["Seafood","Mediterranean","Croatian"],"priceRange":"$$","telephone":"+385 91 933 0101","address":{"@type":"PostalAddress","addressLocality":"Vir","addressCountry":"HR"},"url":"https://artme-nx.github.io/konoba-punta-duba-vir-v2/","acceptsReservations":"True"}
+</script>
+<style>
+:root{
+  --paper:#FBF7EE;     /* topla bjelina */
+  --paper-2:#F1EADB;
+  --teal:#2C7A70;      /* morska tirkizna */
+  --teal-d:#1f5a52;
+  --aqua:#6FB3A8;
+  --sand:#C9B595;
+  --ink:#1f2421;       /* tamni text */
+  --ink-soft:#5b6560;
+  --line:rgba(31,36,33,.14);
+  --fd:'Spectral',Georgia,serif;
+  --fb:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{font-family:var(--fb);background:var(--paper);color:var(--ink);font-size:17px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+img{display:block;max-width:100%;}a{color:inherit;text-decoration:none;}
+::selection{background:var(--teal);color:#fff;}
+.wrap{width:min(1200px,90vw);margin:0 auto;}
+h1,h2,h3{font-family:var(--fd);font-weight:500;line-height:1.08;letter-spacing:-.005em;}
+.it{font-style:italic;}
+.eyebrow{font-family:var(--fb);text-transform:uppercase;font-size:11px;letter-spacing:.28em;color:var(--teal);font-weight:500;display:inline-block;}
+
+.header{position:fixed;top:0;left:0;width:100%;z-index:120;display:flex;align-items:center;justify-content:space-between;padding:20px clamp(18px,5vw,54px);background:rgba(251,247,238,.72);backdrop-filter:blur(9px);transition:padding .4s,box-shadow .4s;}
+.header.scrolled{padding:12px clamp(18px,5vw,54px);box-shadow:0 1px 0 var(--line);}
+.brand{display:flex;flex-direction:column;line-height:1;}
+.brand .b1{font-family:var(--fd);font-size:24px;letter-spacing:.01em;font-weight:600;}
+.brand .b2{font-family:var(--fb);font-size:9px;text-transform:uppercase;letter-spacing:.32em;color:var(--teal);margin-top:5px;}
+.nav{display:flex;gap:30px;align-items:center;}
+.nav a{text-transform:uppercase;font-size:11px;letter-spacing:.16em;color:var(--ink-soft);position:relative;padding:4px 0;transition:color .3s;}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--teal);transition:width .35s;}
+.nav a:hover{color:var(--ink);}.nav a:hover::after{width:100%;}
+.header-right{display:flex;align-items:center;gap:16px;}
+.lang{display:flex;gap:7px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);}
+.lang a{opacity:.55;transition:.3s;}.lang a.active,.lang a:hover{opacity:1;color:var(--teal);}.lang span{opacity:.3;}
+.btn{font-family:var(--fb);text-transform:uppercase;font-size:11px;letter-spacing:.16em;background:var(--teal);color:#fff;border:none;cursor:pointer;padding:12px 22px;border-radius:40px;transition:background .35s,transform .35s;}
+.btn:hover{background:var(--teal-d);transform:translateY(-1px);}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;z-index:130;}
+.burger span{width:26px;height:2px;background:var(--ink);display:block;transition:.35s;}
+.mobile-menu{position:fixed;inset:0;background:var(--paper);z-index:115;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;transform:translateY(-100%);transition:transform .55s cubic-bezier(.7,0,.2,1);}
+.mobile-menu.open{transform:translateY(0);}
+.mobile-menu a{font-family:var(--fd);font-size:34px;padding:8px 0;}
+.mobile-menu .mlang{margin-top:26px;display:flex;gap:18px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);}
+
+/* type-led centered hero */
+.hero{padding:clamp(130px,20vh,210px) 0 0;text-align:center;}
+.hero .eyebrow{margin-bottom:24px;}
+.hero h1{font-size:clamp(48px,9vw,124px);font-weight:500;letter-spacing:-.02em;}
+.hero h1 .it{color:var(--teal);font-weight:400;}
+.hero .lead{max-width:540px;margin:26px auto 0;color:var(--ink-soft);}
+.hero-cta{margin-top:32px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.hero-band{margin-top:clamp(48px,7vw,84px);position:relative;height:clamp(300px,52vw,560px);overflow:hidden;will-change:clip-path;}
+.hero-band .pimg{position:absolute;inset:-8% 0;width:100%;height:116%;background-color:#2b3b38;background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1900&q=80');background-size:cover;background-position:center;will-change:transform;}
+.hero-band .cap{position:absolute;left:0;bottom:0;width:100%;padding:26px clamp(18px,5vw,54px);background:linear-gradient(transparent,rgba(15,25,23,.5));color:#fff;font-family:var(--fd);font-style:italic;font-size:clamp(16px,2vw,22px);text-align:left;}
+
+.cta{display:inline-flex;align-items:center;gap:9px;font-family:var(--fb);text-transform:uppercase;font-size:12px;letter-spacing:.14em;padding:15px 28px;border-radius:40px;cursor:pointer;border:1px solid transparent;transition:.35s;}
+.cta.fill{background:var(--teal);color:#fff;}.cta.fill:hover{background:var(--teal-d);}
+.cta.ghost{border-color:var(--ink);color:var(--ink);}.cta.ghost:hover{background:var(--ink);color:var(--paper);}
+.cta.wa{background:#1f5e3a;color:#eaf4ec;}.cta.wa:hover{background:#1a4f31;}
+
+.reveal{opacity:0;transform:translateY(26px);}
+
+.stats{padding:clamp(64px,9vh,110px) 0;}
+.stats .row{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:center;}
+.stats .st{border-left:1px solid var(--line);padding:6px 20px;}
+.stats .st:first-child{border-left:none;}
+.stats .st .n{font-family:var(--fd);font-size:clamp(40px,5vw,60px);color:var(--teal);line-height:1;}
+.stats .st .l{margin-top:10px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);}
+
+.intro{padding:clamp(40px,6vh,70px) 0 clamp(80px,12vh,150px);text-align:center;}
+.intro .wrap{max-width:720px;}
+.intro .rule{width:52px;height:1px;background:var(--sand);margin:0 auto 30px;}
+.intro p{font-family:var(--fd);font-size:clamp(24px,3.4vw,36px);line-height:1.42;}
+.intro p .it{color:var(--teal);}
+
+.menu{padding:clamp(80px,12vh,140px) 0;background:var(--paper-2);}
+.menu .head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:18px;margin-bottom:50px;}
+.menu .head h2{font-size:clamp(38px,6vw,72px);}
+.menu .head .note{max-width:320px;text-align:right;font-size:14px;color:var(--ink-soft);}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.dish{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:24px 26px;}
+.dish .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;}
+.dish h3{font-family:var(--fd);font-size:24px;font-weight:500;}
+.dish .tag{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);white-space:nowrap;}
+.dish p{margin-top:8px;font-size:14.5px;color:var(--ink-soft);}
+
+.story{padding:clamp(80px,12vh,150px) 0;overflow:hidden;}
+.story .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(36px,6vw,84px);align-items:center;}
+.story-figure{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:5/6;background:#2b3b38;will-change:clip-path;}
+.story-figure .pimg{position:absolute;inset:-8% 0;width:100%;height:116%;background-color:#2b3b38;background-image:url('https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=1100&q=80');background-size:cover;background-position:center;will-change:transform;}
+.story-text h2{font-size:clamp(34px,5vw,58px);margin-bottom:20px;}
+.story-text h2 .it{color:var(--teal);display:block;}
+.story-text p{margin-bottom:16px;color:var(--ink-soft);}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px;}
+.chips span{font-size:11px;padding:7px 15px;border:1px solid var(--line);border-radius:40px;color:var(--ink-soft);}
+
+.gal{padding:clamp(80px,12vh,140px) 0;background:var(--paper-2);}
+.gal .head{text-align:center;margin-bottom:46px;}
+.gal .head h2{font-size:clamp(34px,5vw,58px);margin-top:12px;}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.gtile{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:4/3;background:#2b3b38;}
+.gtile .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .9s ease;}
+.gtile:hover .bg{transform:scale(1.06);}
+.gtile figcaption{position:absolute;left:0;bottom:0;width:100%;padding:13px;background:linear-gradient(transparent,rgba(15,25,23,.62));color:#fff;font-family:var(--fd);font-style:italic;font-size:15px;opacity:0;transform:translateY(8px);transition:.4s;}
+.gtile:hover figcaption{opacity:1;transform:translateY(0);}
+
+.resv{padding:clamp(84px,12vh,150px) 0;text-align:center;}
+.resv .eyebrow{margin-bottom:16px;}
+.resv h2{font-size:clamp(38px,6vw,70px);margin-bottom:16px;}
+.resv h2 .it{color:var(--teal);}
+.resv .lead{max-width:540px;margin:0 auto 12px;color:var(--ink-soft);}
+.resv .hours{font-family:var(--fd);font-style:italic;font-size:20px;margin-bottom:36px;}
+.r-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+.loc{padding:clamp(80px,12vh,140px) 0;background:var(--paper-2);}
+.loc .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.loc h2{font-size:clamp(32px,5vw,52px);margin-bottom:20px;}
+.loc .addr{font-family:var(--fd);font-size:22px;margin:6px 0 20px;line-height:1.4;}
+.loc p{color:var(--ink-soft);margin-bottom:8px;}
+.loc .maplink{display:inline-block;margin-top:10px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);border-bottom:1px solid var(--teal);padding-bottom:3px;}
+.loc-map{aspect-ratio:5/4;border-radius:6px;overflow:hidden;position:relative;background:linear-gradient(135deg,#dfe7d8,#cdd9c9);}
+.loc-map::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(44,122,112,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(44,122,112,.12) 1px,transparent 1px);background-size:38px 38px;}
+.loc-map .pin{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%);text-align:center;}
+.loc-map .pin .dot{width:18px;height:18px;border-radius:50%;background:var(--teal);margin:0 auto 8px;box-shadow:0 0 0 8px rgba(44,122,112,.18);}
+.loc-map .pin span{font-family:var(--fd);font-style:italic;font-size:18px;color:var(--ink);}
+.loc-map .sea{position:absolute;bottom:0;left:0;width:100%;height:40%;background:linear-gradient(180deg,rgba(111,179,168,.4),rgba(44,122,112,.55));}
+.loc-map .sea-label{position:absolute;bottom:14px;right:18px;font-family:var(--fd);font-style:italic;font-size:15px;color:#14443d;}
+
+.footer{background:var(--ink);color:rgba(251,247,238,.72);padding:70px 0 40px;}
+.footer .grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:38px;margin-bottom:44px;}
+.footer h4{font-family:var(--fd);font-size:26px;color:var(--paper);margin-bottom:10px;font-weight:600;}
+.footer .tag{font-family:var(--fd);font-style:italic;font-size:16px;color:rgba(251,247,238,.6);}
+.footer .col-t{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--aqua);margin-bottom:14px;}
+.footer a{display:block;font-size:14px;margin-bottom:8px;color:rgba(251,247,238,.72);transition:.3s;}.footer a:hover{color:var(--paper);}
+.footer .bottom{border-top:1px solid rgba(251,247,238,.14);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:rgba(251,247,238,.5);}
+
+.panel-ov{position:fixed;inset:0;background:rgba(15,25,23,.5);opacity:0;pointer-events:none;transition:opacity .4s;z-index:198;backdrop-filter:blur(2px);}
+.panel-ov.open{opacity:1;pointer-events:all;}
+.panel{position:fixed;top:0;right:0;height:100svh;width:min(430px,100vw);background:var(--paper);z-index:200;transform:translateX(100%);transition:transform .55s cubic-bezier(.7,0,.2,1);padding:48px clamp(26px,4vw,40px);overflow-y:auto;box-shadow:-20px 0 60px rgba(0,0,0,.25);}
+.panel.open{transform:translateX(0);}
+.panel .px{position:absolute;top:22px;right:24px;background:none;border:none;font-size:26px;cursor:pointer;color:var(--ink);}
+.panel h3{font-size:36px;margin:12px 0 6px;}
+.panel .psub{font-family:var(--fd);font-style:italic;font-size:18px;color:var(--ink-soft);margin-bottom:26px;}
+.panel .qrow{display:flex;gap:12px;margin-bottom:24px;}
+.panel .qrow a{flex:1;text-align:center;padding:14px;border-radius:40px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;}
+.qrow .qtel{background:var(--teal);color:#fff;}.qrow .qwa{background:#1f5e3a;color:#eaf4ec;}
+.panel .divr{display:flex;align-items:center;gap:14px;margin:6px 0 22px;color:var(--ink-soft);font-size:11px;letter-spacing:.2em;text-transform:uppercase;}
+.panel .divr::before,.panel .divr::after{content:"";flex:1;height:1px;background:var(--line);}
+.panel label{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin:16px 0 6px;}
+.panel input,.panel select,.panel textarea{width:100%;padding:12px 14px;border:1px solid var(--line);background:#fff;border-radius:6px;font-family:var(--fb);font-size:15px;color:var(--ink);}
+.panel input:focus,.panel select:focus,.panel textarea:focus{outline:none;border-color:var(--teal);}
+.panel .submit{width:100%;margin-top:24px;background:var(--ink);color:var(--paper);border:none;padding:16px;border-radius:40px;text-transform:uppercase;letter-spacing:.15em;font-size:12px;cursor:pointer;transition:.3s;font-family:var(--fb);}
+.panel .submit:hover{background:var(--teal);}
+.panel .pnote{font-size:12px;color:var(--ink-soft);margin-top:14px;text-align:center;}
+
+.mobile-bar{position:fixed;bottom:0;left:0;width:100%;z-index:140;display:none;grid-template-columns:1fr 1fr;}
+.mobile-bar a{padding:15px;text-align:center;color:#fff;text-transform:uppercase;font-size:11px;letter-spacing:.12em;display:flex;align-items:center;justify-content:center;}
+.mobile-bar a.mwa{background:#1f5e3a;}.mobile-bar a.mtel{background:var(--teal);}
+
+@media(max-width:900px){
+  .nav,.header .lang{display:none;}.burger{display:flex;}.header-right .btn{display:none;}
+  .stats .row{grid-template-columns:1fr;gap:18px;}.stats .st{border-left:none;border-top:1px solid var(--line);padding-top:18px;}.stats .st:first-child{border-top:none;}
+  .menu-grid,.story .grid,.gal-grid,.loc .grid,.footer .grid{grid-template-columns:1fr;}
+  .menu .head .note{text-align:left;}
+  .mobile-bar{display:grid;}.resv{padding-bottom:120px;}.footer{padding-bottom:90px;}
+}
+@media(max-width:560px){.gal-grid{grid-template-columns:1fr;}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}.reveal{opacity:1!important;transform:none!important;}.hero-band,.story-figure{clip-path:none!important;}}
+</style>
+</head>
+<body>
+<header class="header" id="header">
+  <a href="#top" class="brand"><span class="b1">Punta Duba</span><span class="b2">Konoba · Vir</span></a>
+  <nav class="nav"><a href="#menu">Jelovnik</a><a href="#story">Priča</a><a href="#gal">Galerija</a><a href="#loc">Lokacija</a></nav>
+  <div class="header-right">
+    <div class="lang"><a href="#" class="active">HR</a><span>·</span><a href="#">EN</a><span>·</span><a href="#">DE</a></div>
+    <button class="btn" data-open-resv>Rezerviraj</button>
+    <button class="burger" id="burger" aria-label="Izbornik"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#menu">Jelovnik</a><a href="#story">Priča</a><a href="#gal">Galerija</a><a href="#loc">Lokacija</a>
+  <a href="#resv" style="color:var(--teal)">Rezerviraj</a>
+  <div class="mlang"><a href="#">HR</a><a href="#">EN</a><a href="#">DE</a></div>
+</div>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow reveal">Otok Vir · Dalmacija</span>
+    <h1 class="reveal">Svjetlost mora,<br><span class="it">okus s gradela.</span></h1>
+    <p class="lead reveal">Opuštena obiteljska konoba na otoku Viru. Svježa riba, peka i domaće — uz vodu, uz zalazak, bez žurbe.</p>
+    <div class="hero-cta reveal">
+      <button class="cta fill" data-open-resv>Rezervirajte stol</button>
+      <a href="#menu" class="cta ghost">Pogledajte jelovnik</a>
+    </div>
+  </div>
+  <div class="hero-band reveal" id="heroBand">
+    <div class="pimg" id="heroPimg"></div>
+    <div class="cap">Stol uz more na punti otoka Vira.</div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap"><div class="row">
+    <div class="st reveal"><div class="n"><span class="count" data-to="100">0</span>+</div><div class="l">recenzija gostiju</div></div>
+    <div class="st reveal"><div class="n"><span class="count" data-to="9">0</span></div><div class="l">jela s mora i žara</div></div>
+    <div class="st reveal"><div class="n it" style="font-style:italic">svaki dan</div><div class="l">svjež ulov</div></div>
+  </div></div>
+</section>
+
+<section class="intro">
+  <div class="wrap reveal">
+    <div class="rule"></div>
+    <p>Kod nas se ne žuri. Riba dolazi ujutro iz mreže, peka se naručuje dan ranije, vino je domaće — <span class="it">a sunce zađe točno kad treba.</span></p>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><span class="eyebrow">Jelovnik</span><h2>S mora i ispod peke</h2></div>
+      <p class="note">Jelovnik se mijenja s ulovom i sezonom. Za peku javite se dan unaprijed.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="dish reveal"><div class="top"><h3>Riba na gradele</h3><span class="tag">Dnevni ulov</span></div><p>Svježa bijela riba dana, pečena na žaru, maslinovo ulje i blitva.</p></div>
+      <div class="dish reveal"><div class="top"><h3>Hobotnica ispod peke</h3><span class="tag">Peka</span></div><p>Hobotnica i krumpir pod čripnjom — naručite dan ranije.</p></div>
+      <div class="dish reveal"><div class="top"><h3>Janjetina ispod peke</h3></div><p>Janjetina s otoka, ispod peke, mekana i mirisna na dim.</p></div>
+      <div class="dish reveal"><div class="top"><h3>Školjke na buzaru</h3></div><p>Dagnje i kvrkavci na buzaru, bijelo vino, češnjak i peršin.</p></div>
+      <div class="dish reveal"><div class="top"><h3>Crni rižot</h3></div><p>Rižoto sa sipinim crnilom — klasik naše obale.</p></div>
+      <div class="dish reveal"><div class="top"><h3>Brodet s palentom</h3></div><p>Riblji brodet kuhan polako, uz domaću palentu.</p></div>
+      <div class="dish reveal"><div class="top"><h3>Pašta s plodovima mora</h3></div><p>Domaća tjestenina sa škampima i školjkama.</p></div>
+      <div class="dish reveal"><div class="top"><h3>Domaće predjelo</h3></div><p>Pršut, ovčji sir i masline — za početak, uz čašu vina.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="wrap"><div class="grid">
+    <div class="story-figure reveal"><div class="pimg" id="storyPimg"></div></div>
+    <div class="story-text reveal">
+      <span class="eyebrow">Naša priča</span>
+      <h2>Konoba <span class="it">na samoj punti</span></h2>
+      <p>Punta Duba je obiteljska konoba na otoku Viru, smještena tamo gdje se kopno spušta u more. Recepti su naslijeđeni, ribu donose lokalni ribari, a peka se priprema onako kako se to ovdje radi generacijama.</p>
+      <p>Nemamo veliki jelovnik — imamo ono što je dan donio. Dođite gladni i bez žurbe, ostatak je na nama.</p>
+      <div class="chips"><span>Dnevni ulov</span><span>Peka ispod čripnje</span><span>Domaće vino</span><span>Pogled na more</span></div>
+    </div>
+  </div></div>
+</section>
+
+<section class="gal" id="gal">
+  <div class="wrap">
+    <div class="head reveal"><span class="eyebrow">Galerija</span><h2>Sa žara i s mora</h2></div>
+    <div class="gal-grid">
+      <figure class="gtile reveal"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80')"></div><figcaption>Plodovi Jadrana</figcaption></figure>
+      <figure class="gtile reveal"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80')"></div><figcaption>Riba na gradele</figcaption></figure>
+      <figure class="gtile reveal"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=1000&q=80')"></div><figcaption>Domaće vino</figcaption></figure>
+      <figure class="gtile reveal"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=80')"></div><figcaption>Stol uz more</figcaption></figure>
+      <figure class="gtile reveal"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80')"></div><figcaption>Večer na terasi</figcaption></figure>
+      <figure class="gtile reveal"><div class="bg" style="background-image:url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1000&q=80')"></div><figcaption>Zalazak za puntom</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="resv" id="resv">
+  <div class="wrap reveal">
+    <span class="eyebrow">Rezervacije</span>
+    <h2>Sjednite <span class="it">uz more</span></h2>
+    <p class="lead">Nazovite ili pišite na WhatsApp — za stol uz vodu i za peku najbolje je javiti se dan ranije.</p>
+    <p class="hours">Otvoreno sezonski · Govorimo HR · EN · DE</p>
+    <div class="r-actions">
+      <a href="tel:+385919330101" class="cta fill">Nazovite · +385 91 933 0101</a>
+      <a href="https://wa.me/385919330101" class="cta wa" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="cta ghost" data-open-resv>Pošaljite upit</button>
+    </div>
+  </div>
+</section>
+
+<section class="loc" id="loc">
+  <div class="wrap"><div class="grid">
+    <div class="reveal">
+      <span class="eyebrow">Lokacija</span>
+      <h2>Na otoku Viru</h2>
+      <p class="addr">Otok Vir<br>Zadarska županija, Hrvatska</p>
+      <p>Vir je povezan mostom s kopnom — do nas se lako stiže autom, a još ljepše pješice uz more u smiraj dana.</p>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Konoba+Punta+Duba+Vir" target="_blank" rel="noopener">Otvori u Google Maps →</a>
+    </div>
+    <div class="loc-map reveal" aria-hidden="true">
+      <div class="pin"><div class="dot"></div><span>Punta Duba</span></div>
+      <div class="sea"></div><div class="sea-label">Jadransko more</div>
+    </div>
+  </div></div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="grid">
+      <div><h4>Konoba Punta Duba</h4><p class="tag">Svjetlost mora, okus s gradela.</p><p style="font-size:13px;margin-top:14px">Obiteljska konoba na otoku Viru · gostoljubivost s preko 100 recenzija.</p></div>
+      <div><p class="col-t">Kontakt</p><a href="tel:+385919330101">+385 91 933 0101</a><a href="https://wa.me/385919330101" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.google.com/maps/search/?api=1&query=Konoba+Punta+Duba+Vir" target="_blank" rel="noopener">Otok Vir</a></div>
+      <div><p class="col-t">Pratite nas</p><a href="https://www.facebook.com/search/top?q=konoba%20punta%20duba%20vir" target="_blank" rel="noopener">Facebook</a><p class="tag" style="margin-top:14px;font-size:13px">Jezici: HR · EN · DE</p></div>
+    </div>
+    <div class="bottom"><span>© <span id="yr"></span> Konoba Punta Duba, Vir</span><span>Otvoreno sezonski · Dobrodošli na puntu.</span></div>
+  </div>
+</footer>
+
+<div class="panel-ov" id="panelOv"></div>
+<aside class="panel" id="panel" aria-label="Rezervacija">
+  <button class="px" data-close-resv aria-label="Zatvori">×</button>
+  <span class="eyebrow">Rezervacija stola</span>
+  <h3>Javite se</h3>
+  <p class="psub">Odgovaramo osobno — bez online sustava.</p>
+  <div class="qrow"><a href="tel:+385919330101" class="qtel">Nazovi</a><a href="https://wa.me/385919330101" class="qwa" target="_blank" rel="noopener">WhatsApp</a></div>
+  <div class="divr">ili pošaljite upit</div>
+  <form id="resvForm">
+    <label for="rn">Ime i prezime</label><input id="rn" type="text" required placeholder="Vaše ime" />
+    <label for="rd">Datum &amp; vrijeme</label><input id="rd" type="text" placeholder="npr. 18.7. u 20h" />
+    <label for="rp">Broj gostiju</label><select id="rp"><option>2 osobe</option><option>3 osobe</option><option>4 osobe</option><option>5–6 osoba</option><option>7+ osoba</option></select>
+    <label for="rm">Poruka</label><textarea id="rm" rows="3" placeholder="Stol uz more, peka (dan ranije)…"></textarea>
+    <button type="submit" class="submit">Pošalji upit putem WhatsAppa</button>
+    <p class="pnote">Otvara WhatsApp s vašim upitom — potvrdu šaljemo osobno.</p>
+  </form>
+</aside>
+
+<div class="mobile-bar">
+  <a href="tel:+385919330101" class="mtel">Nazovi</a>
+  <a href="https://wa.me/385919330101" class="mwa" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var header=document.getElementById('header');
+function onS(){header.classList.toggle('scrolled',window.scrollY>40);}onS();window.addEventListener('scroll',onS,{passive:true});
+var burger=document.getElementById('burger'),mm=document.getElementById('mobileMenu');
+burger.addEventListener('click',function(){mm.classList.toggle('open');document.body.style.overflow=mm.classList.contains('open')?'hidden':'';});
+mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open');document.body.style.overflow='';});});
+var panel=document.getElementById('panel'),pov=document.getElementById('panelOv');
+function op(){panel.classList.add('open');pov.classList.add('open');document.body.style.overflow='hidden';}
+function cl(){panel.classList.remove('open');pov.classList.remove('open');document.body.style.overflow='';}
+document.querySelectorAll('[data-open-resv]').forEach(function(b){b.addEventListener('click',op);});
+document.querySelectorAll('[data-close-resv]').forEach(function(b){b.addEventListener('click',cl);});
+pov.addEventListener('click',cl);document.addEventListener('keydown',function(e){if(e.key==='Escape')cl();});
+document.getElementById('resvForm').addEventListener('submit',function(e){e.preventDefault();
+  var n=document.getElementById('rn').value||'',d=document.getElementById('rd').value||'',p=document.getElementById('rp').value||'',m=document.getElementById('rm').value||'';
+  var t='Pozdrav Punta Duba! Rezervacija stola.%0AIme: '+encodeURIComponent(n)+'%0ATermin: '+encodeURIComponent(d)+'%0AGostiju: '+encodeURIComponent(p)+(m?'%0ANapomena: '+encodeURIComponent(m):'');
+  window.open('https://wa.me/385919330101?text='+t,'_blank');});
+if(window.gsap){gsap.registerPlugin(ScrollTrigger);
+  if(!reduce&&window.Lenis){var lenis=new Lenis({duration:1.2,easing:function(t){return Math.min(1,1.001-Math.pow(2,-10*t));},smoothWheel:true});
+    gsap.ticker.add(function(t){lenis.raf(t*1000);});gsap.ticker.lagSmoothing(0);lenis.on('scroll',ScrollTrigger.update);
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length<2)return;var el=document.querySelector(id);if(el){e.preventDefault();lenis.scrollTo(el,{offset:-60});}});});}
+  if(!reduce){
+    /* clip-path reveals (T3) */
+    [['#heroBand','#heroPimg'],['.story-figure','#storyPimg']].forEach(function(p){var f=document.querySelector(p[0]);if(!f)return;
+      gsap.fromTo(f,{clipPath:'inset(0 0 100% 0)'},{clipPath:'inset(0 0 0% 0)',duration:1.3,ease:'power3.inOut',scrollTrigger:{trigger:f,start:'top 85%'}});});
+    gsap.to('#heroPimg',{yPercent:8,ease:'none',scrollTrigger:{trigger:'#heroBand',start:'top bottom',end:'bottom top',scrub:1}});
+    gsap.to('#storyPimg',{yPercent:-8,ease:'none',scrollTrigger:{trigger:'.story',start:'top bottom',end:'bottom top',scrub:1}});
+    /* scale-in + fade reveals */
+    gsap.utils.toArray('.reveal').forEach(function(el){
+      var isCard=el.classList.contains('gtile')||el.classList.contains('dish')||el.classList.contains('st');
+      gsap.fromTo(el,{opacity:0,y:isCard?20:26,scale:isCard?.96:1},{opacity:1,y:0,scale:1,duration:.85,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 90%'}});});
+    /* count-up */
+    gsap.utils.toArray('.count').forEach(function(el){var to=+el.getAttribute('data-to'),o={v:0};
+      gsap.to(o,{v:to,duration:1.6,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 90%',once:true},onUpdate:function(){el.textContent=Math.round(o.v);}});});
+  }
+}
+</script>
+</body>
+</html>
